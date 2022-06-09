@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="D:/js/main.css">
+</head>
+<body>
+    <div id = 'parent'>
+        <div class = 'baby'>
+            <h1 id = 'first_title'>Black Jack online</h1>
+        </div>
+        <div class = 'baby'>
+            <h3 id = 'money_title'>кол-во денег на счету :<div id="money"></div></h3>
+        </div>
+        <div class = 'baby'>
+            <input type="text"  id = 'money_to_casion'/>
+        </div>
+        <div class = 'baby'>
+            <button id = 'start_game' ,  onclick = 'money_off()'  >поднять  ставку</button>
+            <button id = 'start_game' ,  onclick = 'money_on()'  >понизить ставку</button>
+        </div>
+        <div class = 'baby'>
+            <h3 id = 'your_money'>ваша ставка : <div id = 'yuo'></div></h3>
+        </div>
+    </div>
+    <div class = 'game'>
+    <button id = 'spin' , onclick = 'your_card()'>раздача</button>
+    <h2 id = 'my_card'>ваш счет : <div id ='final_money'></div></h2>
+    <h2 id = 'enemy_card'>счет противника : <div id ='enemy_money'></div></h2>
+    </div>
+    <div id = 'play_ground'>
+        <button id = 'plus_card' , onclick = 'plus_card_player()'>добавить карту</button>
+        <button id = 'stop' , onclick = 'check_enemy_number()'>хватит</button>
+        <button id = 'restart' , onclick="restrat_game()">перезагрузка</button>
+    </div>
+    <div id = 'check'>
+        <button id = 'check_all' , onclick = 'check_score()'>подвести итоги</button>
+    </div>
+
+
+
+    
+</body>
+<script text = 'javascript' src = 'D:/js/main.js'></script>
+<script text = 'javascript' src = 'D:/js/test.js'></script>
+</html>
